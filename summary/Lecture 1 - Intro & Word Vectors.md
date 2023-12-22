@@ -29,18 +29,18 @@ Solution: learn to encode similarity in the vectors themselves
 - Use the **similarity of the word vectors** for c and o to **calculate the probability** of o given c
 - **Keep adjusting the word vectors** to maximize this probability
 
-![1702969190526](.\img\softmax-objective_func.png)
+![1702969190526](img\softmax-objective_func.png)
 
 how to calculate P(w~t+j~ | w~t~ ; θ) above
 
-![1702969342488](.\img\probability.png)
+![1702969342488](img\probability.png)
 
 
 
 使用“梯度gradient”来降低损失，对目标函数求v~c~偏导：
 
-![1703233237719](.\img\gradient.png)
+![1703233237719](img\gradient.png)
 
-![1703233491604](.\img\probability(2).png)
+![1703233491604](img\probability(2).png)
 
 即梯度为 "observed" - "expected"
