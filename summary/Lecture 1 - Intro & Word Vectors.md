@@ -2,8 +2,6 @@
 
 GPT: Prediction, natural language --> SQL
 
-
-
 ### Word Meaning & Relationship
 
 representing words as discrete symbols:
@@ -20,11 +18,9 @@ Solution: learn to encode similarity in the vectors themselves
 
 **Distributional semantics**: A word's meaning is given by the words that frequently appear close-by —— **context**
 
-
-
 ### Word2Vec
 
-- corpus语料库
+- corpus 语料库
 - text--t, center word--c, context--o
 - Use the **similarity of the word vectors** for c and o to **calculate the probability** of o given c
 - **Keep adjusting the word vectors** to maximize this probability
@@ -35,12 +31,10 @@ how to calculate P(w~t+j~ | w~t~ ; θ) above
 
 ![1702969342488](./img/probability.png)
 
-
-
-使用“梯度gradient”来降低损失，对目标函数求v~c~偏导：
+使用“梯度 gradient”来降低损失，对目标函数求 v~c~偏导：
 
 ![1703233237719](./img/gradient.png)
 
-![1703233491604](./img/probability(2).png)
+![1703233491604](<./img/probability(2).png>)
 
 即梯度为 "observed" - "expected"
